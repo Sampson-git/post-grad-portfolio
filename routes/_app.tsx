@@ -13,7 +13,7 @@ function MetaTags(
       </title>
       <meta
         name="title"
-        content={`${credentials.name} - Experienced Web Developer | Full Portfolio`}
+        content={`${credentials.name} - Junior Web Developer | Full Portfolio`}
       />
       <meta
         name="description"
@@ -25,7 +25,7 @@ function MetaTags(
       <meta property="og:url" content={`${url}`} />
       <meta
         property="og:title"
-        content={`${credentials.name} - Experienced Web Developer | Full Portfolio`}
+        content={`${credentials.name} - Junior Web Developer | Full Portfolio`}
       />
       <meta
         property="og:description"
@@ -77,7 +77,7 @@ export default function App({ Component }: PageProps) {
   ];
 
   const credentials = {
-    name: "John Doe",
+    name: "Sampson Williford",
   };
 
   const url = "https://opensource-portfolio.deno.dev/";

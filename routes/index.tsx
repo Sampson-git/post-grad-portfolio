@@ -5,30 +5,25 @@ import Wave from "../components/Wave.tsx";
 
 // preload icons
 loadIcons([
-  "majesticons:suitcase",
-  "tabler:calendar-filled",
-  "carbon:location-filled",
-  "logos:deno",
-  "logos:vue",
-  "vscode-icons:file-type-js-official",
-  "vscode-icons:file-type-js-official",
-  "logos:html-5",
-  "logos:css-3",
-  "logos:php",
-  "logos:typescript-icon",
-  "skill-icons:react-dark",
-  "devicon:nextjs",
-  "skill-icons:nuxtjs-dark",
-  "logos:nestjs",
-  "logos:fresh",
-  "skill-icons:laravel-dark",
-  "skill-icons:tailwindcss-dark",
-  "devicon:nodejs",
-  "vscode-icons:file-type-mongo",
-  "logos:postgresql",
-  "logos:mariadb-icon",
-  "skill-icons:cassandra-light",
-  "skill-icons:docker",
+  "skill-icons:cs",
+    "skill-icons:cpp",
+    "logos:java",
+    "vscode-icons:file-type-js-official",
+    "logos:html-5",
+    "logos:css-3",
+    "skill-icons:react-dark",
+    "skill-icons:tailwindcss-dark",
+    "devicon:nodejs",
+    "devicon:express",
+    "devicon:wordpress",
+    "logos:php",
+    "logos:mysql",
+    "vscode-icons:file-type-mongo",
+    "skill-icons:twitter",
+    "skill-icons:premiere",
+    "devicon:unity",
+    "logos:deno",
+    "logos:vue",
 ]);
 
 function Hero() {
@@ -39,13 +34,16 @@ function Hero() {
           <TypingAnimation
             strings={[
               '"Hello, World!"',
+              "«¡Hola, Mundo!»",
+              "「こんにちは世界！」",
               "I'm a developer.",
+              "I'm a communications specialist.",
             ]}
             autoStart={true}
           />
         </h1>
         <p class="text-xl mt-4">
-          I build web applications and websites using modern technologies.
+          Sampson Williford is  a recent college grad creating engaging websites and social media content for the people, communities, and companies that need them!
         </p>
       </div>
       <SpinningModel />
@@ -64,19 +62,19 @@ function Values() {
     {
       title: "Passion for Continuous Learning",
       description:
-        "I actively seek out new technologies and stay up-to-date with industry trends.",
+        "I will never turn down a chance at learning new tools and technologies. Naturally, I keep my ears to the ground concerning the latest news and trends and am always seeking opportunities to show what I know.",
       image: "/img/pexels-pixabay-159711.webp",
     },
     {
-      title: "User-Centric Approach",
+      title: "Loves a Challenge",
       description:
-        "My goal is to create user-friendly applications that solve real-world problems.",
+        'I pride myself on outputting quality work even under short deadlines and tight restrictions, as the saying goes: "Limitation breeds creativity." I believe in pursuing everything whole-heartedly, because being half-hearted in one\'s efforts cannot take them the whole way.',
       image: "/img/pexels-picjumbo-com-55570-196644.webp",
     },
     {
       title: "Collaboration and Communication",
       description:
-        "I excel in team environments and communicate effectively with stakeholders.",
+        "I thrive in team environments and communicate effectively with my peers. Especially in diverse workspaces, where we can complement each other's strengths and weaknesses.",
       image: "/img/pexels-fauxels-3184418.webp",
     },
   ];
@@ -119,16 +117,28 @@ interface Experience {
 function Experience() {
   const experiences: Experience[] = [
     {
-      title: "Full Stack Web Developer",
-      company: "AST Advanced Sales Technologies GmbH",
-      timePeriod: "Sep 2023 - Apr 2024",
-      location: "Vienna, Austria",
+      title: "Social Media Assistant",
+      company: "Washington University in St. Louis - Olin Business School",
+      timePeriod: "Jan - May 2024",
+      location: "St. Louis, Mo",
     },
     {
-      title: "Junior Web Developer",
-      company: "AST Advanced Sales Technologies GmbH",
-      timePeriod: "Feb 2023 - Sep 2023",
-      location: "Vienna, Austria",
+      title: "Intern",
+      company: "Washington University in St. Louis - Social Policy Institute",
+      timePeriod: "Jun - Aug 2022",
+      location: "Remote",
+    },
+    {
+      title: "Communications Intern",
+      company: "Washington University in St. Louis - University Advancement",
+      timePeriod: "Jun - Aug 2021",
+      location: "Remote",
+    },
+    {
+      title: "Intern",
+      company: "Washington University in St. Louis - School of Law",
+      timePeriod: "Jun - Aug 2021",
+      location: "Remote",
     },
   ];
 
@@ -194,19 +204,27 @@ interface Project {
 function Projects() {
   const projects: Project[] = [
     {
-      title: "Denoland Fresh",
+      title: "University Advancement Rebrand",
       description:
         "Fresh is a full stack modern web framework for JavaScript and TypeScript developers.",
-      link: "https://fresh.deno.dev/",
-      type: "Open Source",
+      link: "https://advancement.wustl.edu/",
+      type: "Internship",
       icon: "logos:deno",
     },
     {
-      title: "Dogr.",
+      title: "Game Development + Design Studio",
+      description:
+        "Fresh is a full stack modern web framework for JavaScript and TypeScript developers.",
+      link: "https://fresh.deno.dev/",
+      type: "Extracurricular",
+      icon: "logos:deno",
+    },
+    {
+      title: "Rapid Prototyping",
       description:
         "Dogr is a web application I developed to hone my skills in Nuxt and Vue.",
       link: "https://dogr.vercel.app/",
-      type: "Personal",
+      type: "Academic",
       icon: "logos:vue",
     },
   ];
@@ -248,26 +266,23 @@ function Projects() {
 
 function Technologies() {
   const technologies = [
+    "skill-icons:cs",
+    "skill-icons:cpp",
+    "logos:java",
     "vscode-icons:file-type-js-official",
     "logos:html-5",
     "logos:css-3",
-    "logos:php",
-    "logos:typescript-icon",
     "skill-icons:react-dark",
-    "logos:vue",
-    "devicon:nextjs",
-    "skill-icons:nuxtjs-dark",
-    "logos:nestjs",
-    "logos:fresh",
-    "skill-icons:laravel-dark",
     "skill-icons:tailwindcss-dark",
-    "logos:deno",
     "devicon:nodejs",
+    "devicon:express",
+    "devicon:wordpress",
+    "logos:php",
+    "logos:mysql",
     "vscode-icons:file-type-mongo",
-    "logos:postgresql",
-    "logos:mariadb-icon",
-    "skill-icons:cassandra-light",
-    "skill-icons:docker",
+    "skill-icons:twitter",
+    "skill-icons:premiere",
+    "devicon:unity",
   ];
 
   return (
