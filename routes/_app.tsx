@@ -9,7 +9,7 @@ function MetaTags(
     <>
       {/* Primary Meta Tags */}
       <title>
-        ${credentials.name} - Experienced Web Developer | Full Portfolio
+        ${credentials.name} - Junior Web Developer | Full Portfolio
       </title>
       <meta
         name="title"
@@ -17,7 +17,7 @@ function MetaTags(
       />
       <meta
         name="description"
-        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of web development projects. Specializing in full-stack development with expertise in JavaScript, React, Node.js, and more. Discover how I can bring your web vision to life.`}
+        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of web development and social media projects. Specializing in data-driven approaches with expertise in JavaScript, React, Node.js, and more. Discover how I can strengthen your online presence and communities.`}
       />
 
       {/* Open Graph / Facebook */}
@@ -29,7 +29,7 @@ function MetaTags(
       />
       <meta
         property="og:description"
-        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of web development projects. Specializing in full-stack development with expertise in JavaScript, React, Node.js, and more. Discover how I can bring your web vision to life.`}
+        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of web development and social media projects. Specializing in data-driven approaches with expertise in JavaScript, React, Node.js, and more. Discover how I can strengthen your online presence and communities.`}
       />
       <meta
         property="og:image"
@@ -45,7 +45,7 @@ function MetaTags(
       />
       <meta
         property="twitter:description"
-        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of web development projects. Specializing in full-stack development with expertise in JavaScript, React, Node.js, and more. Discover how I can bring your web vision to life.`}
+        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of web development and social media projects. Specializing in data-driven approaches with expertise in JavaScript, React, Node.js, and more. Discover how I can strengthen your online presence and communities.`}
       />
       <meta
         property="twitter:image"
@@ -83,7 +83,7 @@ export default function App({ Component }: PageProps) {
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <MetaTags credentials={credentials} url={url} />
-        <title>Developer Portfolio | {credentials.name}</title>
+        <title>Portfolio | {credentials.name}</title>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet"/>

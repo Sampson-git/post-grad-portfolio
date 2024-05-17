@@ -305,6 +305,7 @@ function Technologies() {
     "vscode-icons:file-type-mongo",
     "skill-icons:twitter",
     "skill-icons:premiere",
+    "simple-icons:davinciresolve",
     "skill-icons:unity-dark",
   ];
 
