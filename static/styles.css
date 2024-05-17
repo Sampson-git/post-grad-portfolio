@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.emoji-text{
+
+}
 /* Avoid Layout Shift */
 iconify-icon {
   width: 1.5em;

@@ -61,17 +61,12 @@ export default function App({ Component }: PageProps) {
   const socials = [
     {
       name: "GitHub",
-      url: "https://github.com/michael-pfister/deno-portfolio",
+      url: "https://github.com/Sampson-git",
       icon: "fa-brands:github",
     },
     {
-      name: "Twitter",
-      url: "https://twitter.com/ScaredToCompile",
-      icon: "fa-brands:twitter",
-    },
-    {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/michael-pascal-pfister",
+      url: "https://www.linkedin.com/in/sampson-williford-/",
       icon: "fa-brands:linkedin",
     },
   ];
@@ -80,7 +75,7 @@ export default function App({ Component }: PageProps) {
     name: "Sampson Williford",
   };
 
-  const url = "https://opensource-portfolio.deno.dev/";
+  const url = "https://sampson-portfolio.deno.dev/";
 
   return (
     <html lang="en">
@@ -100,7 +95,6 @@ export default function App({ Component }: PageProps) {
         </main>
         <footer class="mt-auto footer w-auto m-2 p-4 bg-neutral text-neutral-content rounded-lg">
           <aside>
-            <span>MIT licensed with ❤️ by Michael</span>
             <span>
               3D Art by{" "}
               <a

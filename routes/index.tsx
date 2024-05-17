@@ -42,8 +42,13 @@ function Hero() {
             autoStart={true}
           />
         </h1>
-        <p class="text-xl mt-4">
-          Sampson Williford is  a recent college grad creating engaging websites and social media content for the people, communities, and companies that need them!
+        <p class="text-lg mt-4">
+          Sampson Williford is  a recent college grad out of WashU from Dallas, Texas.
+          Sampson loves creating engaging websites and social media content and aspires to work in the entertainment industry, specifically marketing and digital media!
+          <br></br>
+          <br></br>
+          Recently, Sampson spent nearly 20 weeks abroad in Japan <span className="emoji-text">🇯🇵</span>, participating in student diplomacy and study-abroad programs.  
+          
         </p>
       </div>
       <SpinningModel />
@@ -60,27 +65,30 @@ interface Value {
 function Values() {
   const values: Value[] = [
     {
-      title: "Passion for Continuous Learning",
+      title: "Passion for Learning",
       description:
         "I will never turn down a chance at learning new tools and technologies. Naturally, I keep my ears to the ground concerning the latest news and trends and am always seeking opportunities to show what I know.",
       image: "/img/pexels-pixabay-159711.webp",
     },
     {
-      title: "Loves a Challenge",
+      title: "Love for Challenges",
       description:
         'I pride myself on outputting quality work even under short deadlines and tight restrictions, as the saying goes: "Limitation breeds creativity." I believe in pursuing everything whole-heartedly, because being half-hearted in one\'s efforts cannot take them the whole way.',
-      image: "/img/pexels-picjumbo-com-55570-196644.webp",
+      image: "/img/blackboard-eqs.jpg",
     },
     {
-      title: "Collaboration and Communication",
+      title: "Desire to Collaborate",
       description:
         "I thrive in team environments and communicate effectively with my peers. Especially in diverse workspaces, where we can complement each other's strengths and weaknesses.",
-      image: "/img/pexels-fauxels-3184418.webp",
+      image: "/img/work-fistbumps.jpg",
     },
   ];
 
   return (
     <>
+    <h1 class="text-3xl font-bold text-primary text-center mb-4">
+        I Am Driven by a...
+    </h1>
       <Wave flip={false} />
       <section class="p-4 flex justify-center items-center gap-4 flex-wrap bg-primary">
         {values.map((value, i) => (
@@ -204,25 +212,17 @@ interface Project {
 function Projects() {
   const projects: Project[] = [
     {
-      title: "University Advancement Rebrand",
+      title: "Dean's Social Media Assistant",
       description:
-        "Fresh is a full stack modern web framework for JavaScript and TypeScript developers.",
-      link: "https://advancement.wustl.edu/",
+        "I operated the social media accounts for WashU Olin's Dean Mike Mazzeo, helping him build a following and online personality in his first year as dean.",
+      link: "https://linkedin.com/michael-mazzeo",
       type: "Internship",
-      icon: "skill-icons:wordpress",
+      icon: "skill-icons:linkedin",
     },
     {
-      title: "Game Development + Design Studio",
+      title: "Rapid Prototype Development Course",
       description:
-        "Fresh is a full stack modern web framework for JavaScript and TypeScript developers.",
-      link: "https://washugdds.itch.io/",
-      type: "Extracurricular",
-      icon: "skill-icons:unity-dark",
-    },
-    {
-      title: "Rapid Prototyping",
-      description:
-        "Dogr is a web application I developed to hone my skills in Nuxt and Vue.",
+        "Over the course of 13-weeks, took my full-stack development skills to the next level by learning how to rapidly develop and implement real-time web apps.",
       link: "https://classes.engineering.wustl.edu/cse330/index.php?title=CSE_330_Online_Textbook_-_Table_of_Contents",
       type: "Class",
       icon: "bi:code-slash",
@@ -230,18 +230,26 @@ function Projects() {
     {
       title: "Dolphin Site Redesign",
       description:
-        "Dogr is a web application I developed to hone my skills in Nuxt and Vue.",
+        "I redesigned my favorite gaming emulator's website as an exercise in my web development and design course.",
       link: "https://wustl-cse204a-sp2024-2.github.io/brand-redesign-Sampson-git/",
       type: "Academic\/Personal",
       icon: "skill-icons:html",
     },
     {
-      title: "Dean's Social Media Account",
+      title: "University Advancement Rebrand",
       description:
-        "Dogr is a web application I developed to hone my skills in Nuxt and Vue.",
-      link: "https://linkedin.com/michael-mazzeo",
+        "I developed several webpages and news articles for my university's advancement department during their brand update to incorporate modern design principles and sensibilities.",
+      link: "https://advancement.wustl.edu/",
       type: "Internship",
-      icon: "skill-icons:linkedin",
+      icon: "skill-icons:wordpress",
+    },
+    {
+      title: "Game Development + Design Studio",
+      description:
+        "As an executive member of this WashU club, I worked with fellow members on designing and developing a small game each semester, and gave lectures on learning and operating the Unity game development software.",
+      link: "https://washugdds.itch.io/",
+      type: "Extracurricular",
+      icon: "skill-icons:unity-dark",
     },
   ];
 
