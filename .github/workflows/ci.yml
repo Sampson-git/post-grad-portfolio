@@ -1,39 +1,29 @@
-name: CI
+name: gh-pages
+
 on:
   push:
-    branches: main
-  pull_request:
-    branches: main
+    branches:
+      - master
 
 jobs:
-  ci:
-    name: CI
-    runs-on: ubuntu-latest
-
+  build-and-deploy:
+    runs-on: ubuntu-18.04
     steps:
-      - name: Clone repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v2
 
-      - name: Install Deno
-        uses: denoland/setup-deno@v1
+      - name: Setup deno
+        uses: denolib/setup-deno@v2
         with:
-          deno-version: v1.x
+          deno-version: v1.7.0
 
-      - name: Check Code Formatting
-        run: "deno fmt --check"
+      - name: Build gh-pages
+        run: |
+          deno --version
+          deno install --unstable --allow-read --allow-write --allow-net --allow-env --allow-run --name=pagic https://deno.land/x/pagic@v1.6.3/mod.ts
+          pagic build
 
-      - name: Lint Code
-        run: "deno lint"
-
-      - name: Build step
-        run: "deno task build"
-
-      - name: Start Server
-        run: "deno task preview &"
-
-      - name: Audit URLs using Lighthouse
-        uses: treosh/lighthouse-ci-action@v11
+      - name: Deploy gh-pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          temporaryPublicStorage: true
-          urls: |
-            http://localhost:8000
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
