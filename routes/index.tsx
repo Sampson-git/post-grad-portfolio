@@ -42,9 +42,8 @@ function Hero() {
             autoStart={true}
           />
         </h1>
-        <p class="text-lg mt-4">
-          Sampson Williford is  a recent college grad out of WashU from Dallas, Texas.
-          Sampson loves creating engaging websites and social media content and aspires to work in the entertainment industry, specifically marketing and digital media!
+        <p class="text-lg mt-4 text-balance">
+          Sampson Williford is a recent college grad out of WashU from Dallas, Texas. Sampson loves creating engaging websites and social media content and aspires to work in the entertainment industry, specifically marketing and digital media!
           <br></br>
           <br></br>
           Recently, Sampson spent nearly 20 weeks abroad in Japan <span className="noto-color-emoji-regular">🇯🇵</span> , participating in student diplomacy and study-abroad programs.  
@@ -86,7 +85,7 @@ function Values() {
 
   return (
     <>
-    <h1 class="text-3xl font-bold text-primary text-center mb-4">
+    <h1 class="text-3xl font-bold text-primary text-center mt-4 mb-4 m-auto">
         I Am Driven by a...
     </h1>
       <Wave flip={false} />

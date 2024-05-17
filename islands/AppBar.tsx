@@ -26,13 +26,12 @@ export default function AppBar() {
 
   return (
     <nav class="flex justify-between items-center p-2">
-      <a href="/" class="text-xl font-bold flex items-center">
+      <a href="/" class="text-xl font-bold flex items-center justify-center">
         <Icon
-          icon="fa6-brands:dev"
+          icon="fa6-solid:house-chimney"
           width="none"
           height="none"
         />
-        Portfolio
       </a>
       <ul class="flex gap-2">
         <li>
@@ -41,7 +40,7 @@ export default function AppBar() {
             href="/Sampson-W-Resume_2024.pdf"
             download
           >
-            Download CV
+            Download Resume
           </a>
         </li>
         <li>
