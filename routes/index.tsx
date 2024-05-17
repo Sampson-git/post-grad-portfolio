@@ -47,7 +47,7 @@ function Hero() {
           Sampson loves creating engaging websites and social media content and aspires to work in the entertainment industry, specifically marketing and digital media!
           <br></br>
           <br></br>
-          Recently, Sampson spent nearly 20 weeks abroad in Japan <span className="emoji-text">🇯🇵</span>, participating in student diplomacy and study-abroad programs.  
+          Recently, Sampson spent nearly 20 weeks abroad in Japan <span className="noto-color-emoji-regular">🇯🇵</span> , participating in student diplomacy and study-abroad programs.  
           
         </p>
       </div>

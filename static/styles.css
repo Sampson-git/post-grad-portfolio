@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.emoji-text{
-
+.noto-color-emoji-regular {
+  font-family: "Noto Color Emoji", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
 /* Avoid Layout Shift */
 iconify-icon {
   width: 1.5em;

@@ -90,6 +90,7 @@ class SpinningModel extends Component {
           id="model-container"
           class="w-full h-full"
         />
+        <p class="text-sm mt-2">*I'm still waiting on my graduation pics, so in the meantime have a model!</p>
       </div>
     );
   }
