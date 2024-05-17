@@ -99,14 +99,16 @@ export default function App({ Component }: PageProps) {
         <footer class="mt-auto footer w-auto m-2 p-4 bg-neutral text-neutral-content rounded-lg">
           <aside>
             <span>
-              3D Art by{" "}
+            {/* "Nintendo DS Lite" (https://skfb.ly/6ZDvQ) by Cianon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). */}
+              <a class="underline" href="https://skfb.ly/opsP8" target="_blank">"Cat dispenser <span className="noto-color-emoji-regular">🐱</span>"</a> by <a class="underline" href="https://sketchfab.com/CuteLeaf"target="_blank">LeafChan</a> is licensed under <a class="underline" href='http://creativecommons.org/licenses/by/4.0/' target="_blank">Creative Commons Attribution</a>
+              {/* 3D Art by{" "}
               <a
                 class="underline"
                 href="https://sketchfab.com/KJLOYH"
                 target="_blank"
               >
                 Valery Kharitonov
-              </a>
+              </a> */}
             </span>
           </aside>
           <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">

@@ -52,8 +52,17 @@ class SpinningModel extends Component {
         gltf.scene.position.sub(center);
 
         // scale the model to fit the scene
-        const scale = 1.3;
-        gltf.scene.scale.set(scale, scale, scale);
+        const scaleY = 1 / (box.max.y - box.min.y);
+        const scaleX = 1/(box.max.x-box.min.x);
+        const scaleZ = 1/(box.max.z-box.min.z);
+        const comparisonRes = (()=>{
+          return scaleX >= scaleY && scaleX >= scaleZ ? `scaleX @ ${scaleX}`
+          : scaleY >= scaleX && scaleY >= scaleZ ? `scaleY @ ${scaleY}`
+          : `scaleZ @ ${scaleZ}`;
+        })();
+        console.log("The largest scale is ", comparisonRes);
+        const customScale = 1 / (box.max.y - box.min.y+1.3);
+        gltf.scene.scale.set(customScale, customScale, customScale);
 
         const animate = function () {
           requestAnimationFrame(animate);
