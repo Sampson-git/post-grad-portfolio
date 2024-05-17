@@ -14,14 +14,14 @@ loadIcons([
     "skill-icons:react-dark",
     "skill-icons:tailwindcss-dark",
     "devicon:nodejs",
-    "devicon:express",
-    "devicon:wordpress",
+    "skill-icons:expressjs-dark",
+    "skill-icons:wordpress",
     "logos:php",
     "logos:mysql",
     "vscode-icons:file-type-mongo",
     "skill-icons:twitter",
     "skill-icons:premiere",
-    "devicon:unity",
+    "skill-icons:unity-dark",
     "logos:deno",
     "logos:vue",
 ]);
@@ -209,30 +209,46 @@ function Projects() {
         "Fresh is a full stack modern web framework for JavaScript and TypeScript developers.",
       link: "https://advancement.wustl.edu/",
       type: "Internship",
-      icon: "logos:deno",
+      icon: "skill-icons:wordpress",
     },
     {
       title: "Game Development + Design Studio",
       description:
         "Fresh is a full stack modern web framework for JavaScript and TypeScript developers.",
-      link: "https://fresh.deno.dev/",
+      link: "https://washugdds.itch.io/",
       type: "Extracurricular",
-      icon: "logos:deno",
+      icon: "skill-icons:unity-dark",
     },
     {
       title: "Rapid Prototyping",
       description:
         "Dogr is a web application I developed to hone my skills in Nuxt and Vue.",
-      link: "https://dogr.vercel.app/",
-      type: "Academic",
-      icon: "logos:vue",
+      link: "https://classes.engineering.wustl.edu/cse330/index.php?title=CSE_330_Online_Textbook_-_Table_of_Contents",
+      type: "Class",
+      icon: "bi:code-slash",
+    },
+    {
+      title: "Dolphin Site Redesign",
+      description:
+        "Dogr is a web application I developed to hone my skills in Nuxt and Vue.",
+      link: "https://wustl-cse204a-sp2024-2.github.io/brand-redesign-Sampson-git/",
+      type: "Academic\/Personal",
+      icon: "skill-icons:html",
+    },
+    {
+      title: "Dean's Social Media Account",
+      description:
+        "Dogr is a web application I developed to hone my skills in Nuxt and Vue.",
+      link: "https://linkedin.com/michael-mazzeo",
+      type: "Internship",
+      icon: "skill-icons:linkedin",
     },
   ];
 
   return (
     <section class="p-4 my-8">
       <h1 class="text-3xl font-bold text-primary text-center mb-4">
-        Projects and Contributions
+        Projects and Classes
       </h1>
       <div class="flex flex-wrap justify-center items-center gap-2">
         {projects.map((project) => (
@@ -275,14 +291,14 @@ function Technologies() {
     "skill-icons:react-dark",
     "skill-icons:tailwindcss-dark",
     "devicon:nodejs",
-    "devicon:express",
-    "devicon:wordpress",
+    "skill-icons:expressjs-dark",
+    "skill-icons:wordpress",
     "logos:php",
     "logos:mysql",
     "vscode-icons:file-type-mongo",
     "skill-icons:twitter",
     "skill-icons:premiere",
-    "devicon:unity",
+    "skill-icons:unity-dark",
   ];
 
   return (
