@@ -84,6 +84,9 @@ export default function App({ Component }: PageProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <MetaTags credentials={credentials} url={url} />
         <title>Developer Portfolio | {credentials.name}</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet"/>
         <link rel="stylesheet" href="/styles.css" />
       </head>
       <body class="min-h-screen flex flex-col max-w-screen-xl mx-auto">
