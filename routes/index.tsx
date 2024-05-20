@@ -85,29 +85,45 @@ function Values() {
 
   return (
     <>
-    <h1 class="text-3xl font-bold text-primary text-center mt-4 mb-4 m-auto">
-        I Am Driven by a...
-    </h1>
       <Wave flip={false} />
-      <section class="p-4 flex justify-center items-center gap-4 flex-wrap bg-primary">
-        {values.map((value, i) => (
-          <div
-            class={"card md:h-auto md:max-w-64 bg-base-100 flex-row md:flex-col shadow-lg" +
-              (i % 2 ? " md:-translate-y-8" : "")}
-          >
-            <figure class="w-1/3 md:h-48 md:w-auto rounded-none rounded-l-box md:rounded-none md:rounded-t-box">
-              <img
-                class="w-full h-full object-cover"
-                src={value.image}
-                alt={value.title}
-              />
-            </figure>
-            <div class="card-body w-2/3 md:w-auto">
-              <h2 class="card-title">{value.title}</h2>
-              <p>{value.description}</p>
+      {/* <h1 class="text-3xl font-bold text-center pt-4 pb-4 m-0 bg-primary">
+          I Am Driven by a...
+      </h1> */}
+      <section class="p-4 flex-col justify-center items-center bg-primary gap-4">
+        {/* The style attribute for this tag, uses the background-color variable of the theme to set the heading color!*/}
+        <h1 class="text-3xl font-bold text-center mt-4 mb-4 m-auto md:-translate-y-10" style={{ "color": 'var(--fallback-b1, oklch(var(--b1)/1))' }}>
+          I Am Driven by a...
+        </h1>
+        <div id="values-card-wrapper" className="flex justify-center items-center gap-4 flex-wrap">
+          {values.map((value, i) => (
+            <div
+              class={"card md:h-auto md:max-w-64 bg-base-100 flex-row md:flex-col shadow-lg" +
+                (i % 2 ? " md:-translate-y-8" : "")}
+            >
+              {/* thinking about using this for a pre-hover style
+                class={"card md:h-auto md:max-w-64 bg-[rgba(150, 150, 150, 0.192)] flex-row md:flex-col shadow-lg" +
+                (i % 2 ? " md:-translate-y-8" : "")}
+            > */}
+              <figure class="w-1/3 md:h-48 md:w-auto rounded-none rounded-l-box md:rounded-none md:rounded-t-box">
+                <img
+                  class="w-full h-full object-cover"
+                  src={value.image}
+                  alt={value.title}
+                />
+              </figure>
+              <div class="card-body w-2/3 md:w-auto glass [--glass-opacity:.075] [--glass-blur:150px] [--glass-reflex-opacity:.095]  [--glass-reflex-degree:25deg] [--glass-text-shadow-opacity:1] rounded-none rounded-l-box md:rounded-none md:rounded-b-box">
+                <h2 class="card-title">{value.title}</h2>
+                <p>{value.description}</p>
+              </div>
+              {/* glassed card bodies 
+              <div class="card-body w-2/3 md:w-auto glass [--glass-opacity:.075] [--glass-blur:150px] [--glass-reflex-opacity:.095]  [--glass-reflex-degree:25deg] [--glass-text-shadow-opacity:1] rounded-none rounded-l-box md:rounded-none md:rounded-b-box">
+                <h2 class="card-title">{value.title}</h2>
+                <p>{value.description}</p>
+              </div>
+              */}
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </section>
       <Wave flip={true} />
     </>

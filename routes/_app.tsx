@@ -96,11 +96,14 @@ export default function App({ Component }: PageProps) {
         <main>
           <Component />
         </main>
-        <footer class="mt-auto footer w-auto m-2 p-4 bg-neutral text-neutral-content rounded-lg">
+        <footer id="portfolio-footer"class="mt-auto footer w-auto m-2 p-4 bg-neutral text-neutral-content rounded-lg">
           <aside>
-            <span>
+            <span id="model-attribution">
               <a class="underline" href="https://skfb.ly/opsP8" target="_blank">"Cat dispenser <span className="noto-color-emoji-regular">🐱</span>"</a> by <a class="underline" href="https://sketchfab.com/CuteLeaf"target="_blank">LeafChan</a> is licensed under <a class="underline" href='http://creativecommons.org/licenses/by/4.0/' target="_blank">Creative Commons Attribution</a>
             </span>
+            {/* <span>
+              <a class="underline" href="https://github.com/Sampson-git/post-grad-portfolio/blob/main/LICENSE" target="_blank">MIT licensed</a> from Michael Pfister.
+            </span> */}
           </aside>
           <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
             {socials.map((social) => (
