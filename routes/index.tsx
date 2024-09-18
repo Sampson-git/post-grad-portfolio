@@ -235,6 +235,22 @@ function Projects() {
       icon: "skill-icons:linkedin",
     },
     {
+      title: "University Advancement Rebrand",
+      description:
+        "I developed several webpages and news articles for my university's advancement department during their brand update to incorporate modern design principles and sensibilities.",
+      link: "https://advancement.wustl.edu/",
+      type: "Internship",
+      icon: "skill-icons:wordpress",
+    }, 
+    {
+      title: "IvyBoost Redesign",
+      description:
+        "For the summer of 2024, I was hired by IvyBoost college counselling to redesign their website with a more modern look and feel! Using figma and my experience from WashU's rebranding, I drafted style tiles as well as desktop/mobile mockups.",
+      link: "Ivyboost_Designs.zip",
+      type: "Internship",
+      icon: "skill-icons:figma-dark",
+    },
+    {
       title: "Rapid Prototype Development Course",
       description:
         "Over the course of 13-weeks, took my full-stack development skills to the next level by learning how to rapidly develop and implement real-time web apps.",
@@ -243,29 +259,20 @@ function Projects() {
       icon: "bi:code-slash",
     },
     {
-      title: "Dolphin Site Redesign",
-      description:
-        "I redesigned my favorite gaming emulator's website as an exercise in my web development and design course.",
-      link: "https://wustl-cse204a-sp2024-2.github.io/brand-redesign-Sampson-git/",
-      type: "Academic\/Personal",
-      icon: "skill-icons:html",
-    },
-    {
-      title: "University Advancement Rebrand",
-      description:
-        "I developed several webpages and news articles for my university's advancement department during their brand update to incorporate modern design principles and sensibilities.",
-      link: "https://advancement.wustl.edu/",
-      type: "Internship",
-      icon: "skill-icons:wordpress",
-    },
-    {
       title: "Game Development + Design Studio",
       description:
         "As an executive member of this WashU club, I worked with fellow members on designing and developing a small game each semester, and gave lectures on learning and operating the Unity game development software.",
       link: "https://washugdds.itch.io/",
       type: "Extracurricular",
       icon: "skill-icons:unity-dark",
-    },
+    }, {
+      title: "Dolphin Site Redesign",
+      description:
+        "I redesigned my favorite gaming emulator's website as an exercise in my web development and design course.",
+      link: "https://wustl-cse204a-sp2024-2.github.io/brand-redesign-Sampson-git/",
+      type: "Academic\/Personal",
+      icon: "skill-icons:html",
+    }
   ];
 
   return (
