@@ -270,7 +270,7 @@ function Projects() {
       description:
         "I redesigned my favorite gaming emulator's website as an exercise in my web development and design course.",
       link: "https://wustl-cse204a-sp2024-2.github.io/brand-redesign-Sampson-git/",
-      type: "Academic\/Personal",
+      type: "Academic",
       icon: "skill-icons:html",
     }
   ];
