@@ -9,15 +9,15 @@ function MetaTags(
     <>
       {/* Primary Meta Tags */}
       <title>
-        ${credentials.name} - Junior Web Developer | Full Portfolio
+        ${credentials.name} | Full Portfolio
       </title>
       <meta
         name="title"
-        content={`${credentials.name} - Junior Web Developer | Full Portfolio`}
+        content={`${credentials.name} | Portfolio`}
       />
       <meta
         name="description"
-        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of web development and social media projects. Specializing in data-driven approaches with expertise in JavaScript, React, Node.js, and more. Discover how I can strengthen your online presence and communities.`}
+        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of web development and digital marketing projects. Specializing in data-driven approaches with expertise across WordPress, HTML/CSS, Social Media Management, and more. Discover how I can strengthen your online presence and communities!`}
       />
 
       {/* Open Graph / Facebook */}
@@ -25,11 +25,11 @@ function MetaTags(
       <meta property="og:url" content={`${url}`} />
       <meta
         property="og:title"
-        content={`${credentials.name} - Junior Web Developer | Full Portfolio`}
+        content={`${credentials.name} | Portfolio`}
       />
       <meta
         property="og:description"
-        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of web development and social media projects. Specializing in data-driven approaches with expertise in JavaScript, React, Node.js, and more. Discover how I can strengthen your online presence and communities.`}
+        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of web development and digital marketing projects. Specializing in data-driven approaches with expertise across WordPress, HTML/CSS, Social Media Management, and more. Discover how I can strengthen your online presence and communities!`}
       />
       <meta
         property="og:image"
@@ -41,11 +41,11 @@ function MetaTags(
       <meta property="twitter:url" content={`${url}`} />
       <meta
         property="twitter:title"
-        content={`${credentials.name} - Experienced Web Developer | Full Portfolio`}
+        content={`${credentials.name} | Portfolio`}
       />
       <meta
         property="twitter:description"
-        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of web development and social media projects. Specializing in data-driven approaches with expertise in JavaScript, React, Node.js, and more. Discover how I can strengthen your online presence and communities.`}
+        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of web development and social media projects. Specializing in data-driven approaches with expertise across multiple technologies.`}
       />
       <meta
         property="twitter:image"
