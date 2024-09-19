@@ -43,7 +43,7 @@ function Hero() {
           />
         </h1>
         <p class="text-lg mt-4 text-balance">
-          Sampson Williford is a recent college grad out of WashU from Dallas, Texas. Sampson loves creating engaging websites and social media content and aspires to work in the entertainment industry, specifically marketing and digital media!
+          Sampson Williford is a recent graduate of WashU from Dallas, Texas. Sampson loves creating engaging websites and social media content and aspires to work in the entertainment industry, specifically marketing and digital media!
           <br></br>
           <br></br>
           Recently, Sampson spent nearly 20 weeks abroad in Japan <span className="noto-color-emoji-regular">🇯🇵</span> , participating in student diplomacy and study-abroad programs.  
@@ -94,7 +94,7 @@ function Values() {
         <h1 class="text-3xl font-bold text-center mt-4 mb-4 m-auto md:-translate-y-10" style={{ "color": 'var(--fallback-b1, oklch(var(--b1)/1))' }}>
           I Am Driven by a...
         </h1>
-        <div id="values-card-wrapper" className="flex justify-center items-center gap-4 flex-wrap">
+        <div id="values-card-wrapper" className="flex justify-center items-center gap-16 flex-wrap">
           {values.map((value, i) => (
             <div
               class={"card md:h-auto md:max-w-64 bg-base-100 flex-row md:flex-col shadow-lg" +
@@ -146,7 +146,7 @@ function Experience() {
       location: "St. Louis, Mo",
     },
     {
-      title: "Intern",
+      title: "Communications Intern",
       company: "Washington University in St. Louis - Social Policy Institute",
       timePeriod: "Jun - Aug 2022",
       location: "Remote",
@@ -158,7 +158,7 @@ function Experience() {
       location: "Remote",
     },
     {
-      title: "Intern",
+      title: "Communications Intern",
       company: "Washington University in St. Louis - School of Law",
       timePeriod: "Jun - Aug 2021",
       location: "Remote",
@@ -211,7 +211,16 @@ function Experience() {
           </>
         ))}
       </div>
+      <div class="flex flex-col gap-4">
       <h1 class="text-3xl font-bold text-primary">Work Experience</h1>
+      <a
+            class="btn btn-primary text-base-100"
+            href="/Sampson-W-Resume_2024.pdf"
+            download
+          >
+            Download Resume
+          </a>
+      </div>
     </section>
   );
 }
@@ -312,23 +321,21 @@ function Projects() {
 
 function Technologies() {
   const technologies = [
-    "skill-icons:cs",
     "skill-icons:cpp",
     "logos:java",
     "vscode-icons:file-type-js-official",
     "logos:html-5",
     "logos:css-3",
     "skill-icons:react-dark",
-    "skill-icons:tailwindcss-dark",
-    "devicon:nodejs",
-    "skill-icons:expressjs-dark",
-    "skill-icons:wordpress",
     "logos:php",
+    "devicon:nodejs",
+    "logos:figma",
+    "simple-icons:canva",
+    "skill-icons:wordpress",
     "logos:mysql",
-    "vscode-icons:file-type-mongo",
+    "logos:mailchimp-freddie",
     "skill-icons:twitter",
     "skill-icons:premiere",
-    "simple-icons:davinciresolve",
     "skill-icons:unity-dark",
   ];
 
