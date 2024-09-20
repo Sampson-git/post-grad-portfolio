@@ -69,6 +69,11 @@ export default function App({ Component }: PageProps) {
       url: "https://www.linkedin.com/in/sampson-williford-/",
       icon: "fa-brands:linkedin",
     },
+    {
+      name: "Email",
+      url: "mailto:s.w.williford@wustl.edu",
+      icon: "mdi:email"
+    },
   ];
 
   const credentials = {
@@ -97,8 +102,11 @@ export default function App({ Component }: PageProps) {
           <Component />
         </main>
         <footer id="portfolio-footer"class="flex flex-col gap-4 items-center mt-auto footer w-auto m-2 p-4 bg-neutral text-neutral-content rounded-lg">
-          <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+          <nav class="flex flex-col items-center justify-items-center justify-center">
+            <h1 class="text-3xl font-bold text-secondary">Contact Me</h1>
+            <ul class="flex flex-row gap-4 items-center">
             {socials.map((social) => (
+              <li>
               <a
                 href={social.url}
                 target="_blank"
@@ -106,7 +114,9 @@ export default function App({ Component }: PageProps) {
               >
                 <Icon icon={social.icon} width="24" height="24" />
               </a>
+              </li>
             ))}
+            </ul>
           </nav>
           <aside>
             <span id="model-attribution">
