@@ -17,7 +17,7 @@ function MetaTags(
       />
       <meta
         name="description"
-        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of web development and digital marketing projects. Specializing in data-driven approaches with expertise across WordPress, HTML/CSS, Social Media Management, and more. Discover how I can strengthen your online presence and communities!`}
+        content={`Explore ${credentials.name}'s portfolio showcasing a diverse range of web development and digital marketing projects. Discover how I can strengthen your online presence and communities!`}
       />
 
       {/* Open Graph / Facebook */}
@@ -96,15 +96,7 @@ export default function App({ Component }: PageProps) {
         <main>
           <Component />
         </main>
-        <footer id="portfolio-footer"class="mt-auto footer w-auto m-2 p-4 bg-neutral text-neutral-content rounded-lg">
-          <aside>
-            <span id="model-attribution">
-              <a class="underline" href="https://skfb.ly/opsP8" target="_blank">"Cat dispenser <span className="noto-color-emoji-regular">🐱</span>"</a> by <a class="underline" href="https://sketchfab.com/CuteLeaf"target="_blank">LeafChan</a> is licensed under <a class="underline" href='http://creativecommons.org/licenses/by/4.0/' target="_blank">Creative Commons Attribution</a>
-            </span>
-            {/* <span>
-              <a class="underline" href="https://github.com/Sampson-git/post-grad-portfolio/blob/main/LICENSE" target="_blank">MIT licensed</a> from Michael Pfister.
-            </span> */}
-          </aside>
+        <footer id="portfolio-footer"class="flex flex-col gap-4 items-center mt-auto footer w-auto m-2 p-4 bg-neutral text-neutral-content rounded-lg">
           <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
             {socials.map((social) => (
               <a
@@ -116,6 +108,14 @@ export default function App({ Component }: PageProps) {
               </a>
             ))}
           </nav>
+          <aside>
+            <span id="model-attribution">
+              <a class="underline" href="https://skfb.ly/opsP8" target="_blank">"Cat dispenser <span className="noto-color-emoji-regular">🐱</span>"</a> by <a class="underline" href="https://sketchfab.com/CuteLeaf"target="_blank">LeafChan</a> is licensed under <a class="underline" href='http://creativecommons.org/licenses/by/4.0/' target="_blank">Creative Commons Attribution</a>
+            </span>
+            {/* <span>
+              <a class="underline" href="https://github.com/Sampson-git/post-grad-portfolio/blob/main/LICENSE" target="_blank">MIT licensed</a> from Michael Pfister.
+            </span> */}
+          </aside>
         </footer>
       </body>
     </html>

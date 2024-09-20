@@ -214,7 +214,7 @@ function Experience() {
       <div class="flex flex-col gap-4">
       <h1 class="text-3xl font-bold text-primary">Work Experience</h1>
       <a
-            class="btn btn-primary text-base-100"
+            class="btn btn-primary text-sm"
             href="/Sampson-W-Resume_2024.pdf"
             download
           >
@@ -262,7 +262,7 @@ function Projects() {
     {
       title: "Rapid Prototype Development Course",
       description:
-        "Over the course of 13-weeks, took my full-stack development skills to the next level by learning how to rapidly develop and implement real-time web apps.",
+        "Over the course of 13-weeks, I took my full-stack development skills to the next level by learning how to rapidly develop and implement real-time web apps.",
       link: "https://classes.engineering.wustl.edu/cse330/index.php?title=CSE_330_Online_Textbook_-_Table_of_Contents",
       type: "Class",
       icon: "bi:code-slash",
@@ -279,7 +279,7 @@ function Projects() {
       description:
         "I redesigned my favorite gaming emulator's website as an exercise in my web development and design course.",
       link: "https://wustl-cse204a-sp2024-2.github.io/brand-redesign-Sampson-git/",
-      type: "Academic",
+      type: "Class",
       icon: "skill-icons:html",
     }
   ];
@@ -349,8 +349,8 @@ function Technologies() {
           <Icon
             class="w-8 h-8"
             icon={technology}
-            width="none"
-            height="none"
+            width="42"
+            height="42"
           />
         ))}
       </div>

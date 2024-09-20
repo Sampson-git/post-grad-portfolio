@@ -45,7 +45,7 @@ export default function AppBar() {
           </a>
         </li>
         <li>
-          <button
+            <button
             class="btn"
             aria-label="change Theme"
             onClick={() => toggleTheme(themes)}
